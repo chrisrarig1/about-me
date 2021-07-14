@@ -4,7 +4,7 @@ header{ background-color:lightsteelblue;
 
 h1{font-size: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    padding-top: 30px;
     text-align: center;
 
 }
@@ -18,11 +18,35 @@ main{
     }
 p{background-color: linen;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 30px;}
+font-size: 25px;
+padding-left: 10px;
+padding-bottom: 5px;
+}
+
 #Lana{ height: 300px;
     width: 300px;
-    margin-left: 300px;}
+    float: left;}
+h2{background-color: linen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 375px;
+}
+    
+ol{background-color: linen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin-left: 375px;
+    list-style-type:decimal;
+    list-style-position:inside;
+    padding-left: 10px;
+    padding-bottom: 50px;
+  
+}
 
 footer{height: fit-content;
-        text-align: center;
+    background-color: lightsteelblue;
+    text-align: center;
+        
 }
