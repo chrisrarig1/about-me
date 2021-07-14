@@ -13,7 +13,7 @@ if(live === 'no' || live ==='n'){
  } else if  (live === 'yes' || live === 'y'){
     alert('Incorrect!! I live in Lincoln,NE');
     // console.log('Incorrect!! I live in Lincoln,NE');
- } else{ alert('incorrect')}
+ } else{ alert('Please respond with a \'yes\' or \'no\' answer')}
 
 let pets = prompt('Do I have any pets? Answer \'yes\' or \'no\'').toLowerCase();
 
@@ -22,7 +22,7 @@ if(pets === 'yes' || pets ==='y'){
  } else if  (pets === 'no' || pets === 'n'){
     alert('Incorrect!! I have one dog');
     // console.log('Incorrect!! I have one dog');
- } else{ alert('incorrect')}
+ } else{ alert('Please respond with a \'yes\' or \'no\' answer')}
 
 let kids = prompt('Do I have any children? Answer \'yes\' or \'no\'').toLowerCase();
 
@@ -31,7 +31,7 @@ let kids = prompt('Do I have any children? Answer \'yes\' or \'no\'').toLowerCas
   } else if  (kids === 'yes' || kids === 'y'){
     alert('Incorrect!! I do not have children');
     // console.log('Incorrect!! I do not have children');
-  } else{ alert('incorrect')}
+  } else{ alert('Please respond with a \'yes\' or \'no\' answer')}
 
 let read = prompt('Do I like to read? Answer \'yes\' or \'no\'').toLowerCase();
 
@@ -40,7 +40,7 @@ let read = prompt('Do I like to read? Answer \'yes\' or \'no\'').toLowerCase();
    } else if  (read === 'no' || read === 'm'){
     alert('Incorrect!! I love to read');
     // console.log('Incorrect!! I love to read');
-   } else{ alert('incorrect')}
+   } else{ alert('Please respond with a \'yes\' or \'no\' answer')}
 
 let work = prompt('Do I currently work for Zillow? Answer \'yes\' or \'no\'').toLowerCase();
 
@@ -49,4 +49,6 @@ let work = prompt('Do I currently work for Zillow? Answer \'yes\' or \'no\'').to
     } else if  (work === 'no' || work === 'm'){
         alert('Incorrect ' + username + 'I do work for Zillow');
         // console.log('Incorrect!! I do work for Zillow');
-    } else{ alert('incorrect')}
+    } else{ alert('Please respond with a \'yes\' or \'no\' answer')}
+
+    alert('Enjoy learning more about me ' + username);
