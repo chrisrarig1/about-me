@@ -6,6 +6,7 @@ alert('Hello '+ username);
 //greet the user
 console.log('username: ' + username);
 
+//First yes or no prompt
 let live = prompt('Do I live in Seattle? Answer \'yes\' or \'no\'').toLowerCase();
 
 if(live === 'no' || live ==='n'){
@@ -15,6 +16,7 @@ if(live === 'no' || live ==='n'){
     // console.log('Incorrect!! I live in Lincoln,NE');
  } else{ alert('Please respond with a \'yes\' or \'no\' answer')}
 
+ //Second yes or no prompt
 let pets = prompt('Do I have any pets? Answer \'yes\' or \'no\'').toLowerCase();
 
 if(pets === 'yes' || pets ==='y'){
@@ -24,6 +26,7 @@ if(pets === 'yes' || pets ==='y'){
     // console.log('Incorrect!! I have one dog');
  } else{ alert('Please respond with a \'yes\' or \'no\' answer')}
 
+//Third yes or no prompt
 let kids = prompt('Do I have any children? Answer \'yes\' or \'no\'').toLowerCase();
 
  if(kids === 'no' || kids ==='n'){
@@ -33,6 +36,7 @@ let kids = prompt('Do I have any children? Answer \'yes\' or \'no\'').toLowerCas
     // console.log('Incorrect!! I do not have children');
   } else{ alert('Please respond with a \'yes\' or \'no\' answer')}
 
+//Fourth yes or no prompt
 let read = prompt('Do I like to read? Answer \'yes\' or \'no\'').toLowerCase();
 
   if(read === 'yes' || read ==='y'){
@@ -42,6 +46,7 @@ let read = prompt('Do I like to read? Answer \'yes\' or \'no\'').toLowerCase();
     // console.log('Incorrect!! I love to read');
    } else{ alert('Please respond with a \'yes\' or \'no\' answer')}
 
+//Fifth yes or no prompt
 let work = prompt('Do I currently work for Zillow? Answer \'yes\' or \'no\'').toLowerCase();
 
    if(work === 'yes' || work ==='y'){
