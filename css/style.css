@@ -1,31 +1,38 @@
 
 header{ background-color:lightsteelblue;
-        height: 120px;}
+        height: 120px;
+}
 
-h1{font-size: 50px;
+h1{
+    font-size: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-top: 30px;
     text-align: center;
-
 }
+
 body{ background-image: url(https://i.guim.co.uk/img/media/d305370075686a053b46f5c0e6384e32b3c00f97/0_50_5231_3138/master/5231.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=878208abf6d919b7ca9948a523d9ff4e); 
-    }
+}
 
 main{
         width: 960px;
         margin: 30px auto;
         min-height: 700px;
-    }
-p{background-color: linen;
+}
+
+p{
+    background-color: linen;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-size: 25px;
 padding-left: 10px;
 padding-bottom: 5px;
+
 }
 
 #Lana{ height: 300px;
     width: 300px;
-    float: left;}
+    float: left;
+}
+
 h2{background-color: linen;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 35px;
