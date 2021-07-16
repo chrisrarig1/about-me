@@ -51,7 +51,7 @@ let work = prompt('Do I currently work for Zillow? Answer \'yes\' or \'no\'').to
 
 if(work === 'yes' || work ==='y'){
   alert(username + ' you are correct!! I am a Senior Mortgage Data Specialist at Zillow');
-} else if (work === 'no' || work === 'm'){
+} else if (work === 'no' || work === 'n'){
   alert('Incorrect ' + username + 'I do work for Zillow');
   // console.log('Incorrect!! I do work for Zillow');
 } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
