@@ -41,7 +41,7 @@ let read = prompt('Do I like to read? Answer \'yes\' or \'no\'').toLowerCase();
 
 if(read === 'yes' || read ==='y'){
   alert(username + ' you are correct!! I love to read!!');
-} else if (read === 'no' || read === 'm'){
+} else if (read === 'no' || read === 'n'){
   alert('Incorrect!! I love to read');
 // console.log('Incorrect!! I love to read');
 } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
