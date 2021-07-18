@@ -103,6 +103,6 @@ while (attempted)
   attempted--;
 }
 alert(`My favorite states/countries to visit are ${favoriteplaces}`);
-alert(`You score ${score} out of 7 on my quiz!!!`);
+alert(`You scored ${score} out of 7 on my quiz!!!`);
 
 
