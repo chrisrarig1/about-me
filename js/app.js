@@ -70,9 +70,9 @@ let attempts = 4;
 
 for(let i = 1; i < attempts; i++){
   if (agequestion < age){
-    agequestion = prompt(`too low!! you have ${attempts-i} left try again!`);
+    agequestion = prompt(`too low!! you have ${attempts-i} tries left try again!`);
   }else if (agequestion > age){
-    agequestion === prompt(`too high!! you have ${attempts-i} left try again!`);
+    agequestion === prompt(`too high!! you have ${attempts-i} tries left try again!`);
   }else{ (alert('You are correct'));
     score++;
     break;}}
@@ -96,7 +96,7 @@ while (attempted)
   }
   if(guessedcorrectly === true){break;}
   if(attempted === 1){break;}
-  alert(`please try again you have ${attempted - 1} remainging`);
+  alert(`please try again you have ${attempted - 1} remaining`);
 
   states = prompt(`what is a favorite state/country of mine to visit`).toLowerCase();
 
