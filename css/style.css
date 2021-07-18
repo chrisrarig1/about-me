@@ -52,6 +52,17 @@ ol{background-color: linen;
   
 }
 
+ul{background-color: linen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin-left: 375px;
+    list-style-type:decimal;
+    list-style-position:inside;
+    padding-left: 10px;
+    padding-bottom: 50px;
+  
+}
+
 footer{height: fit-content;
     background-color: lightsteelblue;
     text-align: center;

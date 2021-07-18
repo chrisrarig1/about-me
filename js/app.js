@@ -57,3 +57,44 @@ if(work === 'yes' || work ==='y'){
 } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
 
 alert('Enjoy learning more about me ' + username);
+
+let age= 32;
+let agequestion = prompt('How old am I?');
+let attempts = 4;
+
+
+for(let i = 1; i < attempts; i++){
+  if (agequestion < age){
+    agequestion = prompt(`too low!! you have ${attempts-i} left try again!`);
+  }else if (agequestion > age){
+    agequestion === prompt(`too high!! you have ${attempts-i} left try again!`);
+  }else{ (alert('You are correct'));
+    break;}}
+if (agequestion !== age){alert('I am 32 yrs old');}
+
+let favoriteplaces = ['michigan','ohio','colorado','ireland','south carolina','washington','jamacia','wyoming','wisconsin','mexico'];
+let states = prompt('what is a favorite state/country of mine to visit').toLowerCase();
+let guessedcorrectly = false;
+let attempted = 10;
+while (attempted)
+{
+
+  for(let i = 0; i < favoriteplaces.length; i++){
+    if (states === favoriteplaces[i]) {
+      alert(`you are correct!`);
+      guessedcorrectly = true;
+      break;
+    }
+
+  }
+  if(guessedcorrectly === true){break;}
+  if(attempted === 1){break;}
+  alert(`please try again you have ${attempted - 1} remainging`);
+
+  states = prompt(`what is a favorite state/country of mine to visit`).toLowerCase();
+
+  attempted--;
+}
+alert(`My favorite states/countries to visit are ${favoriteplaces}`);
+
+
