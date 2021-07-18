@@ -24,7 +24,10 @@ p{
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 font-size: 25px;
 padding-left: 10px;
+padding-right: 10px;
 padding-bottom: 5px;
+text-align: justify;
+
 
 }
 
@@ -56,11 +59,20 @@ ul{background-color: linen;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
     margin-left: 375px;
-    list-style-type:decimal;
+    list-style-type:disc;
     list-style-position:inside;
     padding-left: 10px;
     padding-bottom: 50px;
   
+}
+
+#places{
+    background-color: linen;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    list-style-type:decimal;
+    list-style-position:inside;
+
 }
 
 footer{height: fit-content;
