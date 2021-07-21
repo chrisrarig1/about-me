@@ -21,15 +21,18 @@ function live (){
 live();
 
 //Second yes or no prompt
-let pets = prompt('Do I have any pets? Answer \'yes\' or \'no\'').toLowerCase();
+function pets (){
+  let pets = prompt('Do I have any pets? Answer \'yes\' or \'no\'').toLowerCase();
 
-if(pets === 'yes' || pets ==='y'){
-  alert(username + ' you are correct!! I have a dog named Lana');
-  score++;
-} else if (pets === 'no' || pets === 'n'){
-  alert('Incorrect!! I have one dog');
+  if(pets === 'yes' || pets ==='y'){
+    alert(username + ' you are correct!! I have a dog named Lana');
+    score++;
+  } else if (pets === 'no' || pets === 'n'){
+    alert('Incorrect!! I have one dog');
   // console.log('Incorrect!! I have one dog');
-} else{ alert('Please respond with a \'yes\' or \'no\' answer');}
+  } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
+}
+pets ();
 
 //Third yes or no prompt
 let kids = prompt('Do I have any children? Answer \'yes\' or \'no\'').toLowerCase();
