@@ -48,16 +48,18 @@ function kids (){
 }
 kids();
 //Fourth yes or no prompt
-let read = prompt('Do I like to read? Answer \'yes\' or \'no\'').toLowerCase();
+function read(){
+  let read = prompt('Do I like to read? Answer \'yes\' or \'no\'').toLowerCase();
 
-if(read === 'yes' || read ==='y'){
-  alert(username + ' you are correct!! I love to read!!');
-  score++;
-} else if (read === 'no' || read === 'n'){
-  alert('Incorrect!! I love to read');
-// console.log('Incorrect!! I love to read');
-} else{ alert('Please respond with a \'yes\' or \'no\' answer');}
-
+  if(read === 'yes' || read ==='y'){
+    alert(username + ' you are correct!! I love to read!!');
+    score++;
+  } else if (read === 'no' || read === 'n'){
+    alert('Incorrect!! I love to read');
+  // console.log('Incorrect!! I love to read');
+  } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
+}
+read();
 //Fifth yes or no prompt
 let work = prompt('Do I currently work for Zillow? Answer \'yes\' or \'no\'').toLowerCase();
 
