@@ -64,7 +64,7 @@ if(work === 'yes' || work ==='y'){
 alert('Enjoy learning more about me ' + username);
 
 let age= 32;
-let agequestion = prompt('How old am I?');
+let agequestion = +prompt('How old am I?');
 let attempts = 4;
 
 
@@ -72,11 +72,13 @@ for(let i = 1; i < attempts; i++){
   if (agequestion < age){
     agequestion = prompt(`too low!! you have ${attempts-i} tries left try again!`);
   }else if (agequestion > age){
-    agequestion === prompt(`too high!! you have ${attempts-i} tries left try again!`);
+    agequestion = prompt(`too high!! you have ${attempts-i} tries left try again!`);
   }else{ (alert('You are correct'));
     score++;
-    break;}}
-if (agequestion !== age){alert('I am 32 yrs old');}
+  }}
+if (agequestion !== age){
+  alert('I am 32 yrs old');
+}
 
 let favoriteplaces = ['michigan','ohio','colorado','ireland','south carolina','washington','jamacia','wyoming','wisconsin','mexico'];
 let states = prompt('what is a favorite state/country of mine to visit').toLowerCase();
