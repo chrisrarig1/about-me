@@ -93,32 +93,36 @@ function howOld(){
   if (agequestion !== age){alert('I am 32 yrs old');}
 }
 howOld();
+function places(){
+  let favoriteplaces = ['michigan','ohio','colorado','ireland','south carolina','washington','jamacia','wyoming','wisconsin','mexico'];
+  let states = prompt('what is a favorite state/country of mine to visit').toLowerCase();
+  let guessedcorrectly = false;
+  let attempted = 10;
+  while (attempted)
+  {
 
-let favoriteplaces = ['michigan','ohio','colorado','ireland','south carolina','washington','jamacia','wyoming','wisconsin','mexico'];
-let states = prompt('what is a favorite state/country of mine to visit').toLowerCase();
-let guessedcorrectly = false;
-let attempted = 10;
-while (attempted)
-{
+    for(let i = 0; i < favoriteplaces.length; i++){
+      if (states === favoriteplaces[i]) {
+        alert(`you are correct!`);
+        score++;
+        guessedcorrectly = true;
+        break;
+      }
 
-  for(let i = 0; i < favoriteplaces.length; i++){
-    if (states === favoriteplaces[i]) {
-      alert(`you are correct!`);
-      score++;
-      guessedcorrectly = true;
-      break;
     }
+    if(guessedcorrectly === true){break;}
+    if(attempted === 1){break;}
+    alert(`please try again you have ${attempted - 1} remaining`);
 
+    states = prompt(`what is a favorite state/country of mine to visit`).toLowerCase();
+
+    attempted--;
   }
-  if(guessedcorrectly === true){break;}
-  if(attempted === 1){break;}
-  alert(`please try again you have ${attempted - 1} remaining`);
-
-  states = prompt(`what is a favorite state/country of mine to visit`).toLowerCase();
-
-  attempted--;
+  alert(`My favorite states/countries to visit are ${favoriteplaces}`);
+  alert(`You scored ${score} out of 7 on my quiz!!!`);
 }
-alert(`My favorite states/countries to visit are ${favoriteplaces}`);
-alert(`You scored ${score} out of 7 on my quiz!!!`);
+places();
+
+
 
 
