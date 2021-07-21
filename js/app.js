@@ -7,15 +7,18 @@ alert('Hello '+ username);
 console.log('username: ' + username);
 let score = 0;
 //First yes or no prompt
-let live = prompt('Do I live in Seattle? Answer \'yes\' or \'no\'').toLowerCase();
+function live (){
+  let live = prompt('Do I live in Seattle? Answer \'yes\' or \'no\'').toLowerCase();
 
-if(live === 'no' || live ==='n'){
-  alert(username + ' you are correct!! I live in Lincoln,NE');
-  score++;
-} else if (live === 'yes' || live === 'y'){
-  alert('Incorrect!! I live in Lincoln,NE');
+  if(live === 'no' || live ==='n'){
+    alert(username + ' you are correct!! I live in Lincoln,NE');
+    score++;
+  } else if (live === 'yes' || live === 'y'){
+    alert('Incorrect!! I live in Lincoln,NE');
   // console.log('Incorrect!! I live in Lincoln,NE');
-} else{ alert('Please respond with a \'yes\' or \'no\' answer');}
+  } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
+}
+live();
 
 //Second yes or no prompt
 let pets = prompt('Do I have any pets? Answer \'yes\' or \'no\'').toLowerCase();
