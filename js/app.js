@@ -61,15 +61,18 @@ function read(){
 }
 read();
 //Fifth yes or no prompt
-let work = prompt('Do I currently work for Zillow? Answer \'yes\' or \'no\'').toLowerCase();
+function work(){
+  let work = prompt('Do I currently work for Zillow? Answer \'yes\' or \'no\'').toLowerCase();
 
-if(work === 'yes' || work ==='y'){
-  alert(username + ' you are correct!! I am a Senior Mortgage Data Specialist at Zillow');
-  score++;
-} else if (work === 'no' || work === 'n'){
-  alert('Incorrect ' + username + 'I do work for Zillow');
-  // console.log('Incorrect!! I do work for Zillow');
-} else{ alert('Please respond with a \'yes\' or \'no\' answer');}
+  if(work === 'yes' || work ==='y'){
+    alert(username + ' you are correct!! I am a Senior Mortgage Data Specialist at Zillow');
+    score++;
+  } else if (work === 'no' || work === 'n'){
+    alert('Incorrect ' + username + 'I do work for Zillow');
+    // console.log('Incorrect!! I do work for Zillow');
+  } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
+}
+work ();
 
 alert('Enjoy learning more about me ' + username);
 
