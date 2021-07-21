@@ -35,16 +35,18 @@ function pets (){
 pets ();
 
 //Third yes or no prompt
-let kids = prompt('Do I have any children? Answer \'yes\' or \'no\'').toLowerCase();
+function kids (){
+  let kids = prompt('Do I have any children? Answer \'yes\' or \'no\'').toLowerCase();
 
-if(kids === 'no' || kids ==='n'){
-  alert(username + ' you are correct!! I do not have any children');
-  score++;
-} else if (kids === 'yes' || kids === 'y'){
+  if(kids === 'no' || kids ==='n'){
+    alert(username + ' you are correct!! I do not have any children');
+    score++;
+  } else if (kids === 'yes' || kids === 'y'){
   alert('Incorrect!! I do not have children');
   // console.log('Incorrect!! I do not have children');
-} else{ alert('Please respond with a \'yes\' or \'no\' answer');}
-
+  } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
+}
+kids();
 //Fourth yes or no prompt
 let read = prompt('Do I like to read? Answer \'yes\' or \'no\'').toLowerCase();
 
