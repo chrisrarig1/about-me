@@ -3,9 +3,11 @@
 // ask for users name
 let username = prompt('What is your name?');
 alert('Hello '+ username);
+
 //greet the user
 console.log('username: ' + username);
 let score = 0;
+
 //First yes or no prompt
 function live (){
   let live = prompt('Do I live in Seattle? Answer \'yes\' or \'no\'').toLowerCase();
@@ -15,7 +17,7 @@ function live (){
     score++;
   } else if (live === 'yes' || live === 'y'){
     alert('Incorrect!! I live in Lincoln,NE');
-  // console.log('Incorrect!! I live in Lincoln,NE');
+
   } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
 }
 live();
@@ -29,7 +31,7 @@ function pets (){
     score++;
   } else if (pets === 'no' || pets === 'n'){
     alert('Incorrect!! I have one dog');
-  // console.log('Incorrect!! I have one dog');
+
   } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
 }
 pets ();
@@ -42,11 +44,12 @@ function kids (){
     alert(username + ' you are correct!! I do not have any children');
     score++;
   } else if (kids === 'yes' || kids === 'y'){
-  alert('Incorrect!! I do not have children');
-  // console.log('Incorrect!! I do not have children');
+    alert('Incorrect!! I do not have children');
+
   } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
 }
 kids();
+
 //Fourth yes or no prompt
 function read(){
   let read = prompt('Do I like to read? Answer \'yes\' or \'no\'').toLowerCase();
@@ -56,10 +59,11 @@ function read(){
     score++;
   } else if (read === 'no' || read === 'n'){
     alert('Incorrect!! I love to read');
-  // console.log('Incorrect!! I love to read');
+
   } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
 }
 read();
+
 //Fifth yes or no prompt
 function work(){
   let work = prompt('Do I currently work for Zillow? Answer \'yes\' or \'no\'').toLowerCase();
@@ -69,47 +73,17 @@ function work(){
     score++;
   } else if (work === 'no' || work === 'n'){
     alert('Incorrect ' + username + 'I do work for Zillow');
-    // console.log('Incorrect!! I do work for Zillow');
+
   } else{ alert('Please respond with a \'yes\' or \'no\' answer');}
 }
 work ();
 
 alert('Enjoy learning more about me ' + username);
 
-<<<<<<< HEAD
-let age= 32;
-let agequestion = +prompt('How old am I?');
-let attempts = 4;
-
-
-for(let i = 1; i < attempts; i++){
-  if (agequestion < age){
-    agequestion = prompt(`too low!! you have ${attempts-i} tries left try again!`);
-  }else if (agequestion > age){
-    agequestion = prompt(`too high!! you have ${attempts-i} tries left try again!`);
-  }else{ (alert('You are correct'));
-    score++;
-  }}
-if (agequestion !== age){
-  alert('I am 32 yrs old');
-}
-
-let favoriteplaces = ['michigan','ohio','colorado','ireland','south carolina','washington','jamacia','wyoming','wisconsin','mexico'];
-let states = prompt('what is a favorite state/country of mine to visit').toLowerCase();
-let guessedcorrectly = false;
-let attempted = 10;
-while (attempted)
-{
-
-  for(let i = 0; i < favoriteplaces.length; i++){
-    if (states === favoriteplaces[i]) {
-      alert(`you are correct!`);
-=======
 function howOld(){
   let age= 32;
   let agequestion = prompt('How old am I?');
   let attempts = 4;
-
 
   for(let i = 1; i < attempts; i++){
     if (agequestion < age){
@@ -117,12 +91,12 @@ function howOld(){
     }else if (agequestion > age){
       agequestion === prompt(`too high!! you have ${attempts-i} tries left try again!`);
     }else{ (alert('You are correct'));
->>>>>>> 8d94aed66498cbfceff3039dbb3122eb930aafe2
       score++;
       break;}}
   if (agequestion !== age){alert('I am 32 yrs old');}
 }
 howOld();
+
 function places(){
   let favoriteplaces = ['michigan','ohio','colorado','ireland','south carolina','washington','jamacia','wyoming','wisconsin','mexico'];
   let states = prompt('what is a favorite state/country of mine to visit').toLowerCase();
@@ -130,7 +104,6 @@ function places(){
   let attempted = 10;
   while (attempted)
   {
-
     for(let i = 0; i < favoriteplaces.length; i++){
       if (states === favoriteplaces[i]) {
         alert(`you are correct!`);
